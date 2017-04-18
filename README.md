@@ -1,0 +1,1 @@
+An example project the uses [rollup.js](https://rollupjs.org) to bundle modules for MarkLogic 8+.
