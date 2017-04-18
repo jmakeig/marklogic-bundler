@@ -4,7 +4,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 
 export default {
-  entry: 'src/main.js',
+  entry: 'src/test.js',
   dest: 'build/lib.js',
   format: 'cjs',
   moduleName: 'MyModule',
@@ -15,9 +15,6 @@ export default {
       main: true,
     }),
     commonjs(),
-    babel({
-      exclude: 'node_modules/**',
-      presets: 'es2015-rollup',
-    }),
+    babel(),
   ],
 };
